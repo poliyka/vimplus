@@ -1,3 +1,12 @@
+```sh 
+# 安装vim插件之后遇到的问题，错误log：
+The ycmd server SHUT DOWN (restart with ':YcmRestartServer'). YCM core library not detected
+
+# 解决方案，具体原因没有深究：
+cd ~/.vim/plugged/YouCompleteMe 
+./install.py
+```
+
 ![vimplus-logo][1]
 
 An automatic configuration program for vim
