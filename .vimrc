@@ -22,7 +22,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 通用设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let mapleader = ","      " 定义<leader>键
+let mapleader = " "      " 定义<leader>键
 set nocompatible         " 设置不兼容原始vi模式
 filetype on              " 设置开启文件类型侦测
 filetype plugin on       " 设置加载对应文件类型的插件
@@ -172,6 +172,7 @@ call plug#end()
 runtime macros/matchit.vim
 
 " 编辑vimrc相关配置文件
+nnoremap <SPACE> <Nop>
 nnoremap <leader>e :edit $MYVIMRC<cr>
 nnoremap <leader>vc :edit ~/.vimrc.custom.config<cr>
 nnoremap <leader>vp :edit ~/.vimrc.custom.plugins<cr>
@@ -269,7 +270,7 @@ let g:NERDTreeDirArrowCollapsible='▼'
 
 " YCM
 " 如果不指定python解释器路径，ycm会自己搜索一个合适的(与编译ycm时使用的python版本匹配)
-" let g:ycm_server_python_interpreter = '/usr/bin/python2.7'
+let g:ycm_server_python_interpreter = '/usr/bin/python'
 let g:ycm_confirm_extra_conf = 0 
 let g:ycm_error_symbol = '✗'
 let g:ycm_warning_symbol = '✹'
