@@ -4,7 +4,7 @@ The ycmd server SHUT DOWN (restart with ':YcmRestartServer'). YCM core library n
 
 # 解决方案，具体原因没有深究：
 cd ~/.vim/plugged/YouCompleteMe 
-./install.py
+./install.sh
 ```
 
 ![vimplus-logo][1]
